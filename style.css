@@ -128,12 +128,13 @@ p {
 	color: var(--light-grey-1);
 }
 
-button {
+.CTA-container a {
+	display: inline-block;
+	text-align: center;
 	border: 2px solid var(--sand-light);
 	border-radius: 5px;
 	background: none;
 	padding: 12px 40px;
-	max-width: 500px;
 	transition: var(--transition);
 	margin: 0 30px 20px 0;
 	width: 120px;
@@ -143,16 +144,16 @@ button {
 	margin-bottom: 80px;
 }
 
-.dark-mode-on button {
+.dark-mode-on .CTA-container a {
 	border-color: var(--sand-dark);
 }
 
-button:hover {
+.CTA-container a:hover {
 	background-color: var(--sand-light-button-hover);
 	cursor: pointer;
 }
 
-.dark-mode-on button:hover {
+.dark-mode-on .CTA-container a:hover {
 	background-color: var(--sand-dark-button-hover);
 }
 
@@ -365,5 +366,9 @@ ul::after {
 		bottom: 10px;
 		left: 50%;
 		transform: translateX(-50%);
+	}
+
+	ul::after {
+		height: 80px;
 	}
 }
