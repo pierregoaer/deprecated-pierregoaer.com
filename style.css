@@ -370,13 +370,14 @@ ul::after {
 
 @media screen and (min-width: 551px) {
 	.darkmode-element {
-		width: 135vw;
+		width: 150vw;
 		height: max(100%, 100vh);
 		border-radius: 0 700px 1200px 0;
-		left: -135%;
+		left: -150%;
 	}
 
 	.dark-mode-on.darkmode-element {
+		border-radius: 0 200px 500px 0;
 		left: 0;
 	}
 }
@@ -384,7 +385,7 @@ ul::after {
 @media screen and (max-width: 550px) {
 	.darkmode-element {
 		width: 100vw;
-		height: 100%;
+		height: max(100%, 100vh);
 		border-radius: 0 0 500px 300px;
 		bottom: 100%;
 	}
