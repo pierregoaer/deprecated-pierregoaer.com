@@ -1,5 +1,5 @@
 // ------ Loading ------
-// const body = document.querySelector('body');
+const body = document.querySelector('body');
 // setTimeout(() => {
 // 	body.classList.remove('hidden');
 // 	body.style.opacity = '1';
@@ -11,7 +11,6 @@ const siteWrapper = document.querySelector('.site-wrapper');
 const darkmodeElement = document.querySelector('.darkmode-element');
 
 toggle.onclick = () => {
-	console.log('Change light');
 	body.classList.toggle('dark-mode-on');
 	// darkmodeElement.classList.toggle('dark-mode-on');
 
@@ -52,9 +51,40 @@ mainNavigationLinks.forEach(
 
 // ------ Reveal Animation ------
 let sr = ScrollReveal({
-	duration: 2500,
+	duration: 2000,
 	distance: '60px',
+	delay: 0,
+	// cleanup: true,
 });
 
-sr.reveal('.hero-section');
-sr.reveal('.about-section');
+sr.reveal('.section-title', { origin: 'left', delay: 200 });
+sr.reveal('.hero-section', { origin: 'bottom', delay: 200 });
+sr.reveal('.about-section', { origin: 'bottom', delay: 200 });
+
+sr.reveal('.tech-stack-category', { origin: 'bottom', interval: 150 });
+
+sr.reveal('.main-pr-1 .main-pr-picture-container', { origin: 'left' });
+sr.reveal('.main-pr-1 .main-pr-text', { origin: 'right' });
+sr.reveal('.main-pr-2 .main-pr-picture-container', { origin: 'right' });
+sr.reveal('.main-pr-2 .main-pr-text', { origin: 'left' });
+sr.reveal('.main-pr-3 .main-pr-picture-container', { origin: 'left' });
+sr.reveal('.main-pr-3 .main-pr-text', { origin: 'right' });
+sr.reveal('.main-pr-4 .main-pr-picture-container', { origin: 'right' });
+sr.reveal('.main-pr-4 .main-pr-text', { origin: 'left' });
+sr.reveal('.main-pr-5 .main-pr-picture-container', { origin: 'left' });
+sr.reveal('.main-pr-5 .main-pr-text', { origin: 'right' });
+
+sr.reveal('.secondary-pr-displayed', { origin: 'bottom', delay: 200, interval: 150, scale: 0.9 });
+
+sr.reveal('.contact-section');
+
+// ------ More Secondary Projects ------
+const seeMoreProjectsButton = document.querySelector('.see-more-sec-pr');
+const hiddenSecondaryProjects = document.querySelectorAll('.secondary-pr.hidden');
+
+seeMoreProjectsButton.onclick = () => {
+	hiddenSecondaryProjects.forEach(project => {
+		project.classList.toggle('hidden');
+	});
+	seeMoreProjectsButton.innerText == 'See more' ? (seeMoreProjectsButton.innerText = 'See less') : (seeMoreProjectsButton.innerText = 'See more');
+};
