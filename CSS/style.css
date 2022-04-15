@@ -47,6 +47,7 @@ ul {
 html {
 	scroll-behavior: smooth;
 	background-color: var(--dark-background);
+	overflow-x: hidden;
 }
 
 body {
@@ -364,6 +365,10 @@ p {
 	.mobile-nav-icons {
 		display: flex;
 		gap: 2rem;
+	}
+
+	.hero-section {
+		margin-top: 100px;
 	}
 }
 
