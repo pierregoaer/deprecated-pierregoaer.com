@@ -76,6 +76,7 @@ sr.reveal('.main-pr-5 .main-pr-text', { origin: 'right' });
 
 sr.reveal('.secondary-pr-displayed', { origin: 'bottom', delay: 200, interval: 150, scale: 0.9 });
 
+sr.reveal('.see-more-sec-pr');
 sr.reveal('.contact-section');
 
 // ------ More Secondary Projects ------
