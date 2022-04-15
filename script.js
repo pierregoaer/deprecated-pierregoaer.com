@@ -1,13 +1,14 @@
+// ------ Loading ------
+// const body = document.querySelector('body');
+// setTimeout(() => {
+// 	body.classList.remove('hidden');
+// 	body.style.opacity = '1';
+// }, 800);
+
+// ------ Dark Mode ------
 const toggle = document.querySelector('.toggle-container');
-const body = document.querySelector('body');
 const siteWrapper = document.querySelector('.site-wrapper');
 const darkmodeElement = document.querySelector('.darkmode-element');
-
-//Turn on/off Dark Mode
-// Initialize dark mode on first load
-// body.classList.add('dark-mode-on');
-// siteWrapper.classList.add('dark-mode-on');
-// darkmodeElement.classList.add('dark-mode-on');
 
 toggle.onclick = () => {
 	console.log('Change light');
@@ -21,6 +22,8 @@ toggle.onclick = () => {
 	// }, 800);
 };
 
+// ------ Mobile Navigation ------
+
 const mobileNavIconContainer = document.querySelector('.mobile-nav-icon-container');
 const mobileNavIcon = document.querySelectorAll('.mobile-nav-icon');
 const mainNavigation = document.querySelector('.main-navigation');
@@ -28,6 +31,7 @@ const mainNavigationLinks = document.querySelectorAll('.main-navigation a');
 
 mobileNavIconContainer.addEventListener('click', function () {
 	mobileNavIconContainer.classList.toggle('active');
+	siteWrapper.classList.toggle('hidden');
 	mobileNavIcon.forEach(bar => bar.classList.toggle('active'));
 	const visibility = mainNavigation.getAttribute('data-visible');
 	if (visibility === 'false') mainNavigation.setAttribute('data-visible', true);
@@ -39,8 +43,18 @@ mainNavigationLinks.forEach(
 		(link.onclick = () => {
 			mobileNavIcon.forEach(bar => bar.classList.remove('active'));
 			mobileNavIconContainer.classList.remove('active');
+			siteWrapper.classList.remove('hidden');
 			const visibility = mainNavigation.getAttribute('data-visible');
 			if (visibility === 'false') mainNavigation.setAttribute('data-visible', true);
 			if (visibility === 'true') mainNavigation.setAttribute('data-visible', false);
 		})
 );
+
+// ------ Reveal Animation ------
+let sr = ScrollReveal({
+	duration: 2500,
+	distance: '60px',
+});
+
+sr.reveal('.hero-section');
+sr.reveal('.about-section');
