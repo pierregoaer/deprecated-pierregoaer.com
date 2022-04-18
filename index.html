@@ -85,7 +85,7 @@
 				<h2 class="section-title"><span class="section-number">01.</span> About Me</h2>
 				<p>Hello and welcome! My name is Pierre Goaer and I am a software engineer. I've always had a passion for solving problems and trying to understand how things work.</p>
 				<p>After graduating from my Master's in Mechanical Engineering, I started building physical things with <a href="https://www.claas-group.com/press-corporate-communications/press-releases/claas-launches-the--future-factory--in-le-mans-/2487928" class="text-link" target="_blank">Claas Tractor</a>. As much as I enjoyed it, I knew all along that software engineering was the right thing for me to do. I then decided to move to Canada and learn to code.</p>
-				<p>Today I'm able to build and deploy things on the internet trying to solve problems for people and improving their digital experience.</p>
+				<p>Today I'm able to build and deploy things on the internet trying to help people and improve their digital experience.</p>
 				<p>I am currently based in Toronto, Canada, but am available anywhere on the internet.</p>
 			</section>
 
@@ -184,6 +184,56 @@
 				<h2 class="section-title"><span class="section-number">03.</span> Some Things I've Built</h2>
 				<div class="main-pr main-pr-1">
 					<div class="main-pr-text">
+						<h2>Colour Palettte Generator</h2>
+						<p class="main-pr-description">
+							Import an image, get a colour palette.<br />
+							Select an image from your device and using <a href="https://pillow.readthedocs.io/en/stable/" class="text-link" target="_blank">Pillow</a> and <a href="https://pypi.org/project/colorgram.py/" class="text-link" target="_blank">colorgram.py</a>, get a colour palette generated with the most used colours on the image.
+						</p>
+
+						<div class="main-pr-stack-list">
+							<div class="main-pr-stack">
+								<img src="img/svg/python.svg" alt="Python logo" />
+								<p class="main-pr-tech-name">Python</p>
+							</div>
+							<div class="main-pr-stack">
+								<img src="img/svg/flask.svg" alt="Flask logo" class="invert-colour" />
+								<p class="main-pr-tech-name">Flask</p>
+							</div>
+							<div class="main-pr-stack">
+								<img src="img/svg/javascript.svg" alt="JavaScript logo" />
+								<p class="main-pr-tech-name">JavaScript</p>
+							</div>
+							<div class="main-pr-stack">
+								<img src="img/svg/gunicorn.svg" alt="Gunicorn logo" />
+								<p class="main-pr-tech-name">Gunicorn</p>
+							</div>
+							<div class="main-pr-stack">
+								<img src="img/svg/heroku.svg" alt="Heroku logo" />
+								<p class="main-pr-tech-name">Heroku</p>
+							</div>
+						</div>
+
+						<div class="main-pr-buttons">
+							<!-- <button class="visit-site-button">
+								<a href="#" target="_blank" rel="noopener noreferrer">See the app</a>
+							</button> -->
+							<button class="see-code-button">
+								<a href="https://github.com/pierregoaer/colour-palette-generator" target="_blank" rel="noopener noreferrer"
+									><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="see-code-icon">
+										<path
+											fill="currentColor"
+											d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+										/></svg
+									>See code</a
+								>
+							</button>
+						</div>
+					</div>
+
+					<a href="https://github.com/pierregoaer/colour-palette-generator" target="_blank" class="main-pr-picture-container"><img src="img/colour_palette_generator.png" alt="Colour Palette Generator picture" class="main-pr-picture" /></a>
+				</div>
+				<div class="main-pr main-pr-2">
+					<div class="main-pr-text">
 						<h2>To-Do List</h2>
 						<p class="main-pr-description">
 							A simple to-do app with user authentication.<br />
@@ -232,12 +282,12 @@
 
 					<a href="https://to-do-app-pierre-g.herokuapp.com/" target="_blank" class="main-pr-picture-container"><img src="img/to_do_list.png" alt="to-do list picture" class="main-pr-picture" /></a>
 				</div>
-				<div class="main-pr main-pr-2">
+				<div class="main-pr main-pr-3">
 					<div class="main-pr-text">
 						<h2>Flights Tracker</h2>
 						<p class="main-pr-description">
 							Save money to travel the world.<br />
-							Using <a href="https://www.kiwi.com/ca/" target="_blank" class="text-link">Tequila by Kiwi</a>, <a href="https://sheety.co/" target="_blank" class="text-link">Sheety</a>, <a href="https://developers.google.com/gmail" target="_blank" class="text-link">Google Gmail</a>, and <a href="https://www.twilio.com/docs/usage/api" target="_blank" class="text-link">Twilio</a>'s API, get notified when flights' price to your selected destinations drops below a certain limit that you set.
+							Using <a href="https://www.kiwi.com/ca/" target="_blank" class="text-link">Tequila by Kiwi</a>, <a href="https://sheety.co/" target="_blank" class="text-link">Sheety</a>, <a href="https://developers.google.com/gmail" target="_blank" class="text-link">Google Gmail</a>, and <a href="https://www.twilio.com/docs/usage/api" target="_blank" class="text-link">Twilio</a>'s API, create a list of destinations and set a price limit for each. You get notified when flights' prices drop below that limit.
 						</p>
 
 						<div class="main-pr-stack-list">
@@ -271,7 +321,7 @@
 
 					<a href="https://github.com/pierregoaer/Flights_Tracker" target="_blank" class="main-pr-picture-container"><img src="img/flights_sms_alert.png" alt="to-do list picture" class="main-pr-picture" /></a>
 				</div>
-				<div class="main-pr main-pr-3">
+				<div class="main-pr main-pr-4">
 					<div class="main-pr-text">
 						<h2>Rain SMS Alert</h2>
 						<p class="main-pr-description">
@@ -306,7 +356,7 @@
 
 					<a href="https://github.com/pierregoaer/rain-sms-alert" target="_blank" class="main-pr-picture-container"><img src="img/rain_sms_alert.png" alt="to-do list picture" class="main-pr-picture" /></a>
 				</div>
-				<div class="main-pr main-pr-4">
+				<div class="main-pr main-pr-5">
 					<div class="main-pr-text">
 						<h2>Forkify</h2>
 						<p class="main-pr-description">
@@ -351,12 +401,12 @@
 
 					<a href="https://to-do-app-pierre-g.herokuapp.com/" target="_blank" class="main-pr-picture-container"><img src="img/forkify.png" alt="Forkify Picture" class="main-pr-picture" /></a>
 				</div>
-				<div class="main-pr main-pr-5">
+				<div class="main-pr main-pr-6">
 					<div class="main-pr-text">
 						<h2>Mapty</h2>
 						<p class="main-pr-description">
 							Track your workouts by location and type of activity.<br />
-							Click on the map to add a new workout to your history and save it's location. Select the type of activity you did, enter the details about your workout and it's saved! <br />
+							Click on the map (created with <a href="https://leafletjs.com/SlavaUkraini/" class="text-link" target="_blank">Leaflet</a>) to add a new workout to your history and save its location. Select the type of activity you did, enter the details about your workout and it's saved! <br />
 							<span class="disclaimer">** This app is not optimised for mobiles. **</span>
 						</p>
 
