@@ -73,10 +73,12 @@ sr.reveal('.main-pr-4 .main-pr-picture-container', { origin: 'right' });
 sr.reveal('.main-pr-4 .main-pr-text', { origin: 'left' });
 sr.reveal('.main-pr-5 .main-pr-picture-container', { origin: 'left' });
 sr.reveal('.main-pr-5 .main-pr-text', { origin: 'right' });
+sr.reveal('.main-pr-6 .main-pr-picture-container', { origin: 'right' });
+sr.reveal('.main-pr-6 .main-pr-text', { origin: 'left' });
 
 sr.reveal('.secondary-pr-displayed', { origin: 'bottom', delay: 200, interval: 150, scale: 0.9 });
 
-sr.reveal('.see-more-sec-pr');
+sr.reveal('.see-more-sec-pr', { origin: 'bottom', delay: 300, interval: 150, scale: 0.9 });
 sr.reveal('.contact-section');
 
 // ------ More Secondary Projects ------
