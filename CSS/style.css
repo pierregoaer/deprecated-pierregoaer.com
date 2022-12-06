@@ -558,6 +558,7 @@ p {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
+	column-gap: 40px;
 	border-radius: 12px;
 	margin-bottom: 150px;
 }
@@ -566,13 +567,13 @@ p {
 	flex-direction: row-reverse;
 }
 
-.main-pr:nth-child(even) .main-pr-picture-container {
+/* .main-pr:nth-child(even) .main-pr-picture-container {
 	margin-right: 50px;
 }
 
 .main-pr:nth-child(odd) .main-pr-text {
 	margin-right: 50px;
-}
+} */
 
 .main-pr h2 {
 	font-size: 1.6rem;
