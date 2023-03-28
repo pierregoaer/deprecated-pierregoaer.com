@@ -1245,6 +1245,7 @@ p {
 		grid-template-columns: 1fr 1fr;
 		margin-left: 35px;
 		margin-right: 35px;
+		row-gap: 20px;
 	}
 
 	/* .tech-stack-categories:nth-child(2) .tech-stack-list:last-child { */
