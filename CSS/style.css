@@ -1275,6 +1275,13 @@ p {
 		font-size: 0.9rem;
 	}
 
+	.main-pr-buttons {
+		flex-direction: column;
+		width: fit-content;
+		margin: 0 auto;
+		row-gap: 25px;
+	}
+
 	.secondary-pr-grid {
 		grid-template-columns: 1fr;
 	}
