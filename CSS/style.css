@@ -209,7 +209,7 @@ h1 {
 p {
 	color: var(--dark-grey-1);
 	font-weight: 200;
-	font-size: 1rem;
+	font-size: 1.1rem;
 	line-height: 30px;
 }
 
@@ -465,8 +465,8 @@ p {
 .hero-text a {
 	text-decoration: none;
 	color: var(--dark-grey-2);
-	font-weight: 200;
-	font-size: 16px;
+	font-weight: 400;
+	font-size: 1.1rem;
 }
 
 .dark-mode-on .hero-text a {
@@ -578,6 +578,7 @@ p {
 .main-pr h2 {
 	font-size: 1.6rem;
 	color: var(--sand-dark);
+	margin-bottom: 20px;
 }
 
 .main-pr-description {
@@ -614,6 +615,10 @@ p {
 	height: 35px;
 	width: auto;
 	margin-bottom: 6px;
+}
+
+.main-pr-stack p {
+	font-size: 1rem;
 }
 
 .main-pr-picture {
@@ -665,6 +670,7 @@ p {
 
 .visit-site-button a {
 	color: white;
+	font-size: 1rem;
 }
 
 .dark-mode-on .see-code-button {
@@ -686,6 +692,7 @@ p {
 	color: white;
 	display: flex;
 	align-items: center;
+	font-size: 1rem;
 }
 
 .see-code-button i {
@@ -704,14 +711,13 @@ p {
 	/* border: 1px solid yellow; */
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	column-gap: 15px;
-	row-gap: 15px;
+	gap: 15px;
 }
 
 .secondary-pr {
 	padding: 20px;
 	margin: 0;
-	height: 132px;
+	height: 150px;
 	/* border: 1px solid red; */
 	border-radius: 5px;
 	background-color: var(--sand-light-button-hover);
